@@ -60,7 +60,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-image: url('https://media.giphy.com/media/3o7aCk9vBfKZQfYzFe/giphy.gif'); /* Add a URL for animation */
+    background-image: url('https://media3.giphy.com/media/v1.Y2lkPTc5MGI3NjExYjFrOW9qZDRzNHAwbDNuZTE3MW56bjhkbDd5a21oN3h2aWl3bGQ0MiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26vUB4OeDi3NAQZZ6/giphy.gif'); /* Add a URL for animation */
     background-size: cover;
     z-index: -1;
     opacity: 0.2; /* Adjust for more or less visibility */
