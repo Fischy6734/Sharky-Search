@@ -1,14 +1,12 @@
 document.getElementById('searchButton').addEventListener('click', function() {
-    const query = document.getElementById('searchInput').value.trim();
-    let url;
+    const input = document.getElementById('searchInput').value;
+    if (input.trim() === '') return; // Do nothing if the input is empty
 
-    if (/^[a-zA-Z]+$/.test(query)) {
-        // If input contains only letters, redirect to Bing search
-        url = `https://www.bing.com/search?q=${encodeURIComponent(query)}`;
-    } else {
-        // Redirect to the specified URL
-        url = query.startsWith('http') ? query : `http://${query}`;
-    }
-    
-    window.location.href = url;
+    const isURL = /^https?:\/\//i.test(input);
+    const url = isURL ? input : `https://www.bing.com/search?q=${encodeURIComponent(input)}`;
+    window.open(url, '_blank');
+});
+
+document.getElementById('proxyButton').addEventListener('click', function() {
+    window.open('https://example-proxy.com', '_blank'); // Replace with an actual proxy service URL
 });
