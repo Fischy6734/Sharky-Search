@@ -11,3 +11,8 @@ document.getElementById('search-button').addEventListener('click', function() {
         document.getElementById('error-message').innerText = "Please enter a valid search or URL.";
     }
 });
+const buttonUrl = "My Websites.html"; // Change this URL to your desired link
+
+function navigateToUrl() {
+    window.location.href = buttonUrl;
+}
